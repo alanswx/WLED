@@ -9,7 +9,7 @@
  * || || ||
  * \/ \/ \/
  */
-//#include "../usermods/EXAMPLE_v2/usermod_v2_example.h"
+#include "../usermods/EXAMPLE_v2/usermod_v2_example.h"
 
 #ifdef USERMOD_BATTERY_STATUS_BASIC
 #include "../usermods/battery_status_basic/usermod_v2_battery_status_basic.h"
@@ -93,7 +93,7 @@ void registerUsermods()
    * || || ||
    * \/ \/ \/
    */
-  //usermods.add(new MyExampleUsermod());
+  usermods.add(new MyExampleUsermod());
 
   #ifdef USERMOD_BATTERY_STATUS_BASIC
   usermods.add(new UsermodBatteryBasic());
