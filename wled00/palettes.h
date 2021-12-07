@@ -13,7 +13,7 @@
 #ifndef PalettesWLED_h
 #define PalettesWLED_h
 
-#define GRADIENT_PALETTE_COUNT 58
+#define GRADIENT_PALETTE_COUNT 77
 
 const byte ib_jul01_gp[] PROGMEM = {
     0, 194,  1,  1,
@@ -836,15 +836,347 @@ const byte red_tide_gp[] PROGMEM = {
 
 const byte candy2_gp[] PROGMEM = {
     0,  39, 33, 34,
-   25,   4,  6, 15,
-   48,  49, 29, 22,
-   73, 224,173,  1,
-   89, 177, 35,  5,
-  130,   4,  6, 15,
-  163, 255,114,  6,
-  186, 224,173,  1,
-  211,  39, 33, 34,
-  255,   1,  1,  1};
+    25,   4,  6, 15,
+    48,  49, 29, 22,
+    73, 224,173,  1,
+    89, 177, 35,  5,
+    130,   4,  6, 15,
+    163, 255,114,  6,
+    186, 224,173,  1,
+    211,  39, 33, 34,
+    255,   1,  1,  1};
+
+const byte nes_gp[] PROGMEM = {
+    0,    64,  64,  64,   // dark gray
+    16,   0,   0,   0,    // black
+    32,   0,   0,   0,    // black
+    48,   0,   0,   0,    // black
+    64,   0,   0,   0,    // black
+    80,   0,   0,   0,    // black
+    86,   0,   0,   0,    // black
+    112,  0,   0,   0,    // black
+    128,  255, 0,   0,    // red
+    144,  0,   0,   0,    // black
+    160,  0,   0,   0,    // black
+    176,  0,   0,   0,    // black
+    192,  0,   0,   0,    // black
+    208,  0,   0,   0,    // black
+    224,  0,   0,   0,    // black
+    240,  64,  64,  64,   // dark gray
+    255,  0,   0,   0};   // black
+
+const byte snes_gp[] PROGMEM = {
+    0,   64,  64,  64,   // dark gray
+    16,  64,  64,  64,   // dark gray
+    32,  64,  64,  64,   // dark gray
+    48,  64,  64,  64,   // dark gray
+    64,  160, 94,  128,  // lavender
+    80,  160, 94,  128,  // lavender
+    86,  160, 94,  128,  // lavender
+    112, 84,  0,   255,  // violet
+    128, 84,  0,   255,  // violet
+    144, 84,  0,   255,  // violet
+    160, 160, 94,  128,  // lavender
+    176, 160, 94,  128,  // lavender
+    192, 160, 94,  128,  // lavender
+    208, 64,  64,  64,   // dark gray
+    224, 64,  64,  64,   // dark gray
+    240, 64,  64,  64,   // dark gray
+    255, 64,  64,  64};  // dark gray
+
+const byte sfc_gp[] PROGMEM = {
+    0,   64,  64,  64,   // dark gray
+    16,  64,  64,  64,   // dark gray
+    32,  64,  64,  64,   // dark gray
+    48,  64,  64,  64,   // dark gray
+    64,  0,   255, 0,    // green
+    80,  0,   255, 0,    // green
+    86,  0,   0,   255,  // blue
+    112, 0,   0,   255,  // blue
+    128, 255, 0,   0,    // red
+    144, 255, 0,   0,    // red
+    160, 255, 255, 0,    // yellow
+    176, 255, 255, 0,    // yellow
+    //192, 128, 0, 128,
+    208, 64,  64,  64,   // dark gray
+    224, 64,  64,  64,   // dark gray
+    240, 64,  64,  64,   // dark gray
+    255, 64,  64,  64};  // dark gray
+
+/*
+const byte genesis_gp[] PROGMEM = {
+    0,    255, 0,   0,    // red
+    16,   255, 0,   0,    // red
+    32,   0,   0,   0,    // black
+    48,   0,   0,   0,    // black
+    64,   0,   0,   0,    // black
+    80,   0,   0,   0,    // black
+    86,   0,   0,   0,    // black
+    112,  0,   0,   0,    // black
+    128,  255, 0,   0,    // red
+    144,  0,   0,   0,    // black
+    160,  0,   0,   0,    // black
+    176,  0,   0,   0,    // black
+    192,  0,   0,   0,    // black
+    208,  0,   0,   0,    // black
+    224,  0,   0,   0,    // black
+    240,  255, 0,   0,    // red
+    255,  255, 0,   0};   // red
+*/
+
+const byte genesis_gp[] PROGMEM = {
+    0,    64,  0,   0,    // dark red
+    16,   0,   0,   0,    // black
+    32,   0,   0,   0,    // black
+    48,   0,   0,   0,    // black
+    64,   0,   0,   0,    // black
+    80,   0,   0,   0,    // black
+    86,   0,   0,   0,    // black
+    112,  0,   0,   0,    // black
+    128,  64,  0,   0,    // dark red
+    144,  0,   0,   0,    // black
+    160,  0,   0,   0,    // black
+    176,  0,   0,   0,    // black
+    192,  0,   0,   0,    // black
+    208,  0,   0,   0,    // black
+    224,  0,   0,   0,    // black
+    240,  64,  0,   0,    // dark red
+    255,  0,   0,   0};   // black
+
+const byte megadrive_gp[] PROGMEM = {
+    0,    0,   0,   255,  // blue
+    16,   0,   0,   255,  // blue
+    32,   0,   0,   0,    // black
+    48,   0,   0,   0,    // black
+    64,   0,   0,   0,    // black
+    80,   0,   0,   0,    // black
+    86,   0,   0,   0,    // black
+    112,  0,   0,   0,    // black
+    128,  255, 255, 255,  // white
+    144,  0,   0,   0,    // black
+    160,  0,   0,   0,    // black
+    176,  0,   0,   0,    // black
+    192,  0,   0,   0,    // black
+    208,  0,   0,   0,    // black
+    224,  0,   0,   0,    // black
+    240,  0,   0,   255,  // blue
+    255,  0,   0,   255}; // blue
+
+const byte playstation_gp[] PROGMEM = {
+    0,   64,  64,  64,   // dark gray
+    16,  64,  64,  64,   // dark gray
+    32,  64,  64,  64,   // dark gray
+    48,  64,  64,  64,   // dark gray
+    64,  255, 0,   0,    // red
+    80,  255, 0,   0,    // red
+    86,  255, 255, 0,    // yellow
+    112, 255, 255, 0,    // yellow
+    128, 0,   255, 0,    // green
+    144, 0,   255, 0,    // green
+    160, 0,   0,   255,  // blue
+    176, 0,   0,   255,  // blue
+    192, 64,  64,  64,   // dark gray
+    208, 64,  64,  64,   // dark gray
+    224, 64,  64,  64,   // dark gray
+    240, 64,  64,  64,   // dark gray
+    255, 64,  64,  64};  // dark gray
+
+const byte neogeo_gp[] PROGMEM = {
+    0,    0,   255, 208,  // aqua
+    16,   0,   255, 208,  // aqua
+    32,   0,   255, 208,  // aqua
+    48,   0,   0,   0,    // black
+    64,   0,   0,   0,    // black
+    80,   0,   0,   0,    // black
+    86,   0,   0,   0,    // black
+    112,  255, 255, 0,    // yellow
+    128,  255, 255, 0,    // yellow
+    144,  255, 255, 0,    // yellow
+    160,  0,   0,   0,    // black
+    176,  0,   0,   0,    // black
+    192,  0,   0,   0,    // black
+    208,  0,   0,   0,    // black
+    224,  0,   255, 208,  // aqua
+    240,  0,   255, 208,  // aqua
+    255,  0,   255, 208}; // aqua
+
+const byte atari_2600_gp[] PROGMEM = {
+    0,    100, 64,  0,    // brown
+    16,   100, 64,  0,    // brown
+    32,   100, 64,  0,    // brown
+    48,   0,   0,   0,    // black
+    64,   0,   0,   0,    // black
+    80,   0,   0,   0,    // black
+    86,   0,   0,   0,    // black
+    112,  0,   0,   0,    // black
+    128,  255, 128, 0,    // red-orange
+    144,  0,   0,   0,    // black
+    160,  0,   0,   0,    // black
+    176,  0,   0,   0,    // black
+    192,  0,   0,   0,    // black
+    208,  0,   0,   0,    // black
+    224,  100, 90,  0,    // brown
+    240,  100, 90,  0,    // brown
+    255,  100, 90,  0};    // brown
+
+const byte atari_7800_gp[] PROGMEM = {
+    0,    0,   0,   0,    // black
+    16,   0,   0,   0,    // black
+    32,   255, 0,   0,    // red
+    48,   255, 0,   0,    // red
+    64,   255, 255, 0,    // orange
+    80,   255, 255, 0,    // orange
+    86,   255, 255, 0,    // yellow
+    112,  255, 255, 0,    // yellow
+    128,  0,   255, 0,    // green
+    144,  0,   255, 0,    // green
+    160,  0,   255, 208,  // aqua
+    176,  0,   255, 208,  // aqua
+    192,  0,   0,   255,  // blue
+    208,  0,   0,   255,  // blue
+    224,  64,  63,  0,    // brown
+    240,  0,   0,   0,    // black
+    255,  0,   0,   0};   // black
+
+const byte capcom_gp[] PROGMEM = {
+    0,    0,   0,   255,  // blue
+    16,   0,   0,   255,  // blue
+    32,   0,   0,   255,  // blue
+    48,   255, 255, 0,    // yellow
+    64,   255, 255, 0,    // yellow
+    80,   255, 255, 0,    // yellow
+    86,   255, 255, 0,    // yellow
+    112,  0,   0,   255,  // blue
+    128,  0,   0,   255,  // blue
+    144,  0,   0,   255,  // blue
+    160,  255, 255, 0,    // yellow
+    176,  255, 255, 0,    // yellow
+    192,  255, 255, 0,    // yellow
+    208,  255, 255, 0,    // yellow
+    224,  0,   0,   255,  // blue
+    240,  0,   0,   255,  // blue
+    255,  0,   0,   255}; // blue
+
+const byte gameboy_gp[] PROGMEM = {
+    0,    64,  64,  64,   // dark gray
+    16,   64,  64,  64,   // dark gray
+    32,   64,  64,  64,   // dark gray
+    48,   102, 5,   38,   // maroon/red
+    64,   102, 5,   38,   // maroon/red
+    80,   102, 5,   38,   // maroon/red
+    86,   64,  64,  64,   // dark gray
+    112,  64,  64,  64,   // dark gray
+    128,  64,  64,  64,   // dark gray
+    144,  64,  64,  64,   // dark gray
+    160,  64,  64,  64,   // dark gray
+    176,  102, 5,   38,   // maroon/red
+    192,  102, 5,   38,   // maroon/red
+    208,  102, 5,   38,   // maroon/red
+    224,  64,  64,  64,   // dark gray
+    240,  64,  64,  64,   // dark gray
+    255,  64,  64,  64};  // dark gray
+
+const byte gba_gp[] PROGMEM = {
+    0,    128, 0,   166,  // indigo
+    16,   128, 0,   166,  // indigo
+    32,   128, 0,   166,  // indigo
+    48,   128, 128, 128,  // medium gray
+    64,   128, 128, 128,  // medium gray
+    80,   128, 128, 128,  // medium gray
+    86,   128, 0,   166,  // indigo
+    112,  128, 0,   166,  // indigo
+    128,  128, 0,   166,  // indigo
+    144,  128, 0,   166,  // indigo
+    160,  128, 0,   166,  // indigo
+    176,  128, 128, 128,  // medium gray
+    192,  128, 128, 128,  // medium gray
+    208,  128, 128, 128,  // medium gray
+    224,  128, 0,   166,  // indigo
+    240,  128, 0,   166,  // indigo
+    255,  128, 0,   166}; // indigo
+
+const byte wonderswan_gp[] PROGMEM = {
+    0,    255, 255, 255,  // white
+    16,   0,   200, 255,  // light blue
+    32,   0,   200, 255,  // light blue
+    48,  0,   200, 255,  // light blue
+    64,   255, 255, 0,    // yellow
+    80,   255, 255, 0,    // yellow
+    86,   255, 255, 0,    // yellow
+    112,  255, 0,   0,    // red
+    128,  255, 0,   0,    // red
+    144,  255, 0,   0,    // red
+    160,  140, 108, 176,  // lavender
+    176,  140, 108, 176,  // lavender
+    192,  140, 108, 176,  // lavender
+    208,  255, 176, 240,  // pink
+    224,  255, 176, 240,  // pink
+    224,  255, 176, 240,  // pink
+    255,  255, 255, 255}; // white
+  
+const byte lynx_gp[] PROGMEM = {
+    0,    64,  64,  64,   // dark gray
+    16,   64,  64,  64,   // dark gray
+    32,   64,  64,  64,   // dark gray
+    48,   0,   0,   0,    // black
+    64,   0,   0,   0,    // black
+    80,   0,   0,   0,    // black
+    86,   0,   0,   0,    // black
+    86,   0,   0,   0,    // black
+    86,   255, 153, 0,    // orange
+    112,  255, 153, 0,    // orange
+    128,  255, 153, 0,    // orange
+    144,  0,   0,   0,    // black
+    160,  0,   0,   0,    // black
+    176,  0,   0,   0,    // black
+    192,  0,   0,   0,    // black
+    208,  0,   0,   0,    // black
+    224,  64,  64,  64,   // dark gray
+    224,  64,  64,  64,   // dark gray
+    255,  64,  64,  64};  // dark gray
+  
+const byte turbografx_16_gp[] PROGMEM = {
+    0,    255, 153, 0,    // orange
+    16,   255, 153, 0,    // orange
+    32,   255, 153, 0,    // orange
+    48,   0,   0,   0,    // black
+    64,   0,   0,   0,    // black
+    80,   0,   0,   0,    // black
+    86,   0,   0,   0,    // black
+    86,   0,   0,   0,    // black
+    86,   255, 255, 0,    // yellow
+    112,  255, 255, 0,    // yellow
+    128,  255, 255, 0,    // yellow
+    144,  0,   0,   0,    // black
+    160,  0,   0,   0,    // black
+    176,  0,   0,   0,    // black
+    192,  0,   0,   0,    // black
+    208,  0,   0,   0,    // black
+    224,  255, 153, 0,    // orange
+    224,  255, 153, 0,    // orange
+    255,  255, 153, 0};   // orange
+
+  
+const byte master_system_gp[] PROGMEM = {
+    0,    255, 0,   0,    // red
+    16,   255, 0,   0,    // red
+    32,   255, 0,   0,    // red
+    48,   0,   0,   0,    // black
+    64,   0,   0,   0,    // black
+    80,   0,   0,   0,    // black
+    86,   0,   0,   0,    // black
+    86,   0,   0,   0,    // black
+    86,   255, 255, 255,  // white
+    112,  255, 255, 255,  // white
+    128,  255, 255, 255,  // white
+    144,  0,   0,   0,    // black
+    160,  0,   0,   0,    // black
+    176,  0,   0,   0,    // black
+    192,  0,   0,   0,    // black
+    208,  0,   0,   0,    // black
+    224,  255, 0,   0,    // red
+    224,  255, 0,   0,    // red
+    255,  255, 0,   0};   // red
 
 // Single array of defined cpt-city color palettes.
 // This will let us programmatically choose one based on
@@ -908,7 +1240,23 @@ const byte* const gGradientPalettes[] PROGMEM = {
   blink_red_gp,                 //67-54 Blink Red
   red_shift_gp,                 //68-55 Red Shift
   red_tide_gp,                  //69-56 Red Tide
-  candy2_gp                     //70-57 Candy2
+  candy2_gp,                    //70-57 Candy2
+  nes_gp,                       //71-58 NES
+  snes_gp,                      //72-59 SNES
+  sfc_gp,                       //73-60 SFC
+  genesis_gp,                   //74-61 Genesis
+  megadrive_gp,                 //75-62 Megadrive
+  playstation_gp,               //76-63 Playstation
+  neogeo_gp,                    //77-64 Neo-Geo
+  atari_2600_gp,                //78-65 2600
+  atari_7800_gp,                //79-66 7800
+  capcom_gp,                    //80-67 Capcom
+  gameboy_gp,                   //81-68 GameBoy
+  gba_gp,                       //82-69 GBA
+  wonderswan_gp,                //83-70 Wonderswan
+  lynx_gp,                      //84-71 Lynx
+  turbografx_16_gp,             //85-72 TurboGrafx-16
+  master_system_gp              //86-73 Master System
 };
 
 #endif
