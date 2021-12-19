@@ -748,6 +748,8 @@ void serializePalettes(JsonObject root, AsyncWebServerRequest* request)
   }
 }
 
+
+
 void serializeNodes(JsonObject root)
 {
   JsonArray nodes = root.createNestedArray("nodes");
